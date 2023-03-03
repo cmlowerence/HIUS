@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+:root{
+    /* Colors & Gradients*/
+    --white: #ffffff;
+    --royalBlue: #245785;
+    --textBlue1: #2E99D5;
+    --textBlue2: #389ED7;
+    --textBlack1: #555A61;
+    --textBlack2: #333333;
+    --textBlack3: #1f2025;
+    --gray: #C4C4C4;
+    --smoke: #F1FCFF;
+    --denseSmoke: #ACACAC;
+    --imgGradient: to top right, #a5cdda2f, #245885ba;
+    --footerGradient: to bottom, #202126 100%,#555A62 100%;
+
+    /* Font & Font families */
+    --font1: Filson Pro;
+    --font2: Roboto;
+    --font3: 'Mukta', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: max(920px, 100vh);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+}

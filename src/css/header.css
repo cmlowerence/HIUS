@@ -1,0 +1,45 @@
+#home{
+    overflow-x: hidden;
+}
+.homeDiv{
+    background: linear-gradient(var(--imgGradient)), url('../img/homeBg.jpg') no-repeat;
+    background-size: cover; 
+    position: relative;
+}
+.home-companyLogo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem 5rem;
+}
+.topBar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1% 2%;
+    border: 1px solid red;
+}
+.bottomBar{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(60%, 65vw + 1rem, 75%);
+    margin-block: clamp(2rem,3rem,4rem);
+}
+.bottomBar .home-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(1rem, 3rem, 4rem);
+    width: 70%; 
+}
+.bottomBar .home-links li a{
+   text-decoration: none;
+   font-family: var(--font3);
+   font-weight: 500;
+   font-size: 1rem;
+   color: var(--white);
+}
