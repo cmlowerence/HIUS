@@ -1,7 +1,15 @@
+
 #home{
     overflow-x: hidden;
 }
 .homeDiv{
+    --fs-icon: 1.8rem;
+    --fs-text-sm: 1rem;
+    --fs-text-md: 2rem;
+    --fs-text-bg: 3rem;
+    --mg-inline-side: 2rem;
+    --mg-block-side: max(5rem,10vh);
+
     background: linear-gradient(var(--imgGradient)), url('../img/homeBg.jpg') no-repeat;
     background-size: cover; 
     position: relative;
@@ -26,20 +34,46 @@
     justify-content: center;
     align-items: center;
     width: clamp(60%, 65vw + 1rem, 75%);
-    margin-block: clamp(2rem,3rem,4rem);
+    margin-block: var(--mg-block-side);
 }
 .bottomBar .home-links{
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: clamp(1rem, 3rem, 4rem);
+    gap: clamp(1rem, 3rem, 5vw);
     width: 70%; 
 }
 .bottomBar .home-links li a{
    text-decoration: none;
    font-family: var(--font3);
-   font-weight: 500;
-   font-size: 1rem;
+   font-weight: 600;
+   font-size: var(--fs-text-sm);
    color: var(--white);
+}
+.leftBar{
+    position: absolute;
+    display: flex;
+    left: 0;
+    margin-inline: var(--mg-inline-side);
+}
+.leftBar .slideScroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightBar{
+    position: absolute;
+    right: 0;
+    margin-inline: var(--mg-block-side);
+}
+.rightBar .home-socialMediaIcons{
+    display: grid;
+    gap: max(1rem, 3vh);
+    list-style: none;
+    font-size: var(--fs-icon);
+}
+.rightBar .home-socialMediaIcons *{
+    color: var(--white);
 }

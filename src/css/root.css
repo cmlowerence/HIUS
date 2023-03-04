@@ -15,7 +15,7 @@
     --gray: #C4C4C4;
     --smoke: #F1FCFF;
     --denseSmoke: #ACACAC;
-    --imgGradient: to top right, #a5cdda2f, #245885ba;
+    --imgGradient: to top right, #28b3e22f, #245885ba;
     --footerGradient: to bottom, #202126 100%,#555A62 100%;
 
     /* Font & Font families */
@@ -25,7 +25,7 @@
 }
 .container{
     width: 100vw;
-    height: max(920px, 100vh);
+    height: min(920px, 100vh);
     display: flex;
     flex-direction: column;
     place-items: center;
