@@ -5,6 +5,7 @@
 .homeDiv{
     --fs-icon: 1.8rem;
     --fs-text-sm: 1rem;
+    --fs-text-sm-md: 1.2rem;
     --fs-text-md: 2rem;
     --fs-text-bg: 3rem;
     --mg-inline-side: 2rem;
@@ -22,10 +23,102 @@
 }
 .topBar{
     position: absolute;
+    display: flex;
+    gap: min(3rem,10vw);
+    justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
     margin: 1% 2%;
-    border: 1px solid red;
+    z-index: 5;
+}
+.topBar *{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-family: var(--font3);
+}
+.topBar *:not(.hamburger,.hamburger *,.hamburger__links, .hamburger__links *){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 3;
+}
+.home-topBar-text{
+    font-size: 1rem;
+}
+.hamburger{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    justify-content: center;
+    align-items: flex-start;
+    transition: .3s ease-in-out;
+    z-index: 10;
+}
+.hamburger .burgerLine{
+    display: block;
+    height: 2px;
+    background-color: var(--white);
+    border-radius: 2px;
+    transition: .3s ease-in-out;
+    
+}
+.hamburger .burgerLine:nth-child(1){
+    width: 23px;
+}
+.hamburger .burgerLine:nth-child(2){
+    width: 30px;
+}
+.hamburger .burgerLine:nth-child(3){
+    width: 20px;
+}
+.hamburger.active .burgerLine:nth-child(1){
+    width: 30px;
+}
+.hamburger.active .burgerLine:nth-child(2){
+    width: 20px;
+}
+.hamburger.active .burgerLine:nth-child(3){
+    width: 15px;
+}
+.hamburger__links{
+    position: absolute;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--royalBlue);
+    top: -2rem;
+    left: -50rem;
+    z-index: 2;
+    padding-block: 7rem 4rem;
+    display: grid;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: min(35rem,70vh);
+    width: min(30rem, 25vw);
+    border-radius: 0 0 2rem 0;
+    transition: .3s ease-in-out;
+}
+.hamburger__links.active{
+    left: -3rem; 
+}
+.hamburger__links li{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    padding-block: 1rem;
+    transition: .2s ease-in-out;
+}
+.hamburger__links li:hover{
+    background-color: var(--textBlue1);
+}
+.hamburger__links li a{
+    margin-inline: 5rem;
+    text-decoration: none;
+    font-family: var(--font3);
+    font-size: 1.5rem;
 }
 .bottomBar{
     position: absolute;
@@ -48,7 +141,7 @@
    text-decoration: none;
    font-family: var(--font3);
    font-weight: 600;
-   font-size: var(--fs-text-sm);
+   font-size: var(--fs-text-sm-md);
    color: var(--white);
 }
 .leftBar{
@@ -62,6 +155,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    font-family: var(--font3);
+}
+
+.slideScroll-btn-up ion-icon,.slideScroll-btn-dn ion-icon{
+    font-size: 2rem;
+    color: var(--royalBlue);
+}
+.slideScroll-slideCountDivider{
+    width: 100%;
+    height: 2px;
+    background-color: var(--smoke);
+    border-radius: 2px;
 }
 .rightBar{
     position: absolute;
@@ -77,3 +185,24 @@
 .rightBar .home-socialMediaIcons *{
     color: var(--white);
 }
+.home-scrollArrow{
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    display: grid;
+    place-items: center;
+    line-height: 4;
+}
+.home-scrollArrow .arrowFig{
+    width: 4rem;
+    height: 6rem;
+}   
+.home-scrollArrow .arrowFig img{
+    width: 100%;
+}
+.home-scrollArrow .text{
+    font-size: 1.2rem;
+    color: var(--white);
+    font-family: var(--font3);
+}
+/* Header CSS End */

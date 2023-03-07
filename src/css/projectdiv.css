@@ -1,0 +1,30 @@
+#project{
+    overflow-x: hidden;
+}
+.project__wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+
+}
+.project__text{
+    width: 50%;
+    display: grid;
+}
+.text__desc{
+    width: 50%;
+}
+
+
+/* Right Div */
+.imgWrapper{
+    isolation: isolate;
+    display: flex;
+    border: 1.5rem solid var(--textBlack3);
+    width: 65%;
+}
+.imgWrapper img{
+    width: 100%;
+    z-index: 1;
+    transform: translateY(-1rem);
+}

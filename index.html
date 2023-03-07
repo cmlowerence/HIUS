@@ -8,6 +8,7 @@
     <title>HIUS</title>
     <link rel="stylesheet" href="./src/css/root.css">
     <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/projectdiv.css">
 </head>
 
 <body>
@@ -18,18 +19,25 @@
                     <img src="./src/img/logo.png" alt="logo">
                 </span>
                 <div class="topBar homeBar">
-                    <span class="hamburger">
-                        <div class="burgerLine"></div>
-                        <div class="burgerLine"></div>
-                        <div class="burgerLine"></div>
+                    <span class="hamburger" id="_hamburger">
+                        <span class="burgerLine"></span>
+                        <span class="burgerLine"></span>
+                        <span class="burgerLine"></span>
                     </span>
+                    <ul class="hamburger__links" id="_hamburger__links">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                    </ul>
                     <span class="home-Tel">
                         <span class="telIcon home-ion-icon-div"><ion-icon name="call-outline"></ion-icon></span>
-                        <span class="telNo home-topBar-text"></span>
+                        <span class="telNo home-topBar-text">1-917-477-6552</span>
                     </span>
                     <span class="home-Sales">
                         <span class="cartIcon home-ion-icon-div"><ion-icon name="cart-outline"></ion-icon></span>
-                        <span class="salesCount home-topBar-text"></span>
+                        <span class="salesCount home-topBar-text">260.59</span>
                     </span>
                 </div>
                 <div class="bottomBar homeBar">
@@ -44,11 +52,11 @@
                 </div>
                 <div class="leftBar homeBar">
                     <span class="slideScroll">
-                        <span class="slideScroll-btnUp"><ion-icon name="arrow-up-circle-outline"></ion-icon></span>
+                        <span class="slideScroll-btn-up"><ion-icon name="arrow-up-circle-outline"></ion-icon></span>
                         <span class="slideScroll-slideCount">02</span>
-                        <span class="slideScroll-slideCountDivider">divider</span>
+                        <span class="slideScroll-slideCountDivider"></span>
                         <span class="slideScroll-slideCount">03</span>
-                        <span class="slideScroll-btnDn"><ion-icon name="arrow-down-circle-outline"></ion-icon></span>
+                        <span class="slideScroll-btn-dn"><ion-icon name="arrow-down-circle-outline"></ion-icon></span>
                     </span>
                 </div>
                 <div class="rightBar homeBar">
@@ -58,15 +66,44 @@
                         <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
                         <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
                     </ul>
+
+                </div>
+            </div>
+            <div class="home-scrollArrow">
+                <div class="arrowFig">
+                    <img src="./src/img/arrow_dn.png" loading="lazy">
+                </div>
+                <div class="text">
+                    Scroll to explore
                 </div>
             </div>
         </section>
     </header>
     <main>
+        <article class="container" id="project">
+            <div class="project__wrapper">
+                <div class="project__text">
+                    <span class="text__heading">Influencing The Future Of Place</span>
+                    <span class="text__tagline">Our goal is to improve housing sustainability and elevate the quality of
+                        life
+                    </span>
+                    <span class="text__desc">Every project we embark on is a creative journey that results in an
+                        authentic mix of ideas and material. We draw inspiration from subtlety and nuances in your
+                        vision to create spaces rooted in individuality.</span>
+                </div>
+                <div class="project__img">
+                    <span class="imgWrapper">
+                        <img src="./src/img/proj_img.png" id="proj_img">
+                    </span>
+                </div>
+            </div>
+        </article>
     </main>
     <footer></footer>
+    <script src="./src/js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 <!-- https://www.figma.com/file/Ve8fGUfjfLgEt7MMz8JPyH/Hius?node-id=454%3A160&t=heCJucTsjXODFyzK-0 -->
+
 </html>

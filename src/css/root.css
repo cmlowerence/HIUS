@@ -25,7 +25,7 @@
 }
 .container{
     width: 100vw;
-    height: min(920px, 100vh);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     place-items: center;
