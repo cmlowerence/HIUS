@@ -1,0 +1,83 @@
+.footerWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width: 100vw;
+    background-image: linear-gradient(var(--footerGradient));
+    padding-block-start: 4rem;
+}
+.footer__separator{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.footer__line{
+    height: 1px;
+    border-radius: 1px;
+    background-color: var(--textBlack1);
+    flex-grow: 1;
+}
+
+
+/* <==========Footer Links ===========> */
+.footer__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    font-family: var(--font4);
+    padding-block: 3rem;
+}
+.footer__directLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+.footer__directLinks *,.footer__mediaLinks *{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: var(--font4);
+}
+.footer__mediaLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+.footer__mediaLinks *{
+    font-size: 2rem;
+}
+
+
+/* <==================Footer CopyText CSS================> */
+.footer__copyrightText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    border-top: 2px solid var(--textBlack1);
+    width: 100%;
+    font-family: var(--font4);
+    color: var(--denseSmoke);
+    font-size: 1rem;
+}   
+.footer__terms-policies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.footer__terms-policies *{
+    font-family: var(--font4);
+    color: var(--denseSmoke);
+    text-decoration: none;
+    font-size: 1rem;
+}

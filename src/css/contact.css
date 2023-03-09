@@ -11,5 +11,74 @@
     height: 60%;
     border-radius: 3.75rem;
     background-color: var(--white);
-    opacity: .95;
+    opacity: .9;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: var(--font4);
 }
+.contact__card__heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+    font-weight: 600;
+    gap: 1rem;
+    color: var(--textBlue3);
+
+}
+.contact__card__heading .sm-hr{
+    width: 2rem;
+    height: 3.5px;
+    border-radius: 3.5px;
+    background-color: var(--textBlue3);
+}
+.contact__card__textMsg{
+    font-size: 2.75rem;
+    color: var(--textBlue4);
+    line-height: -0.01rem;
+}
+.contact__card__btn{
+    gap: 1rem;
+    position: relative;
+    padding-inline: 4rem;
+    padding-block: 1.5rem;
+    border-radius: 4rem;
+    border: 2px solid var(--textBlue1);
+    color: var(--textBlue1);
+    font-size: 1.5rem;
+    font-weight: 600;
+    overflow: hidden;
+}
+.contact__card__btn ,.contact__card__btn *{
+    transition: .5s ease-in-out;
+}
+.contact__card__btn ion-icon{
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.contact__card__btn::before{
+    content: '';
+    position: absolute;
+    height: 101%;
+    width: 40rem;
+    left: -50rem;
+    background-color: var(--textBlue1);
+    border-radius: 4rem;
+    transition: .5s ease-in-out;
+    z-index: -1;
+}
+.contact__card__btn:hover{
+    border-color: transparent;
+}
+.contact__card__btn:hover:before{
+    left: 0;
+ }
+.contact__card__btn:hover>*{
+    color: var(--white);
+    
+ }
