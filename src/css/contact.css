@@ -1,0 +1,15 @@
+.contactWrapper{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__card{
+    width: 75%;
+    height: 60%;
+    border-radius: 3.75rem;
+    background-color: var(--white);
+    opacity: .95;
+}

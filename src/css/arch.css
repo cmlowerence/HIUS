@@ -1,0 +1,13 @@
+.archWrapper{
+    display: grid;
+    place-items: center;
+    row-gap: 1.5rem;
+}
+.arch__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    font-weight: 700;
+    color: var(--textBlue3);
+}

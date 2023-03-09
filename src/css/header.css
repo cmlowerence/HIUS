@@ -57,6 +57,10 @@
     align-items: flex-start;
     transition: .3s ease-in-out;
     z-index: 10;
+    background-color: transparent;
+    outline-color: transparent;
+    border:none;
+    padding: 2px;
 }
 .hamburger .burgerLine{
     display: block;

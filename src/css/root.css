@@ -1,27 +1,33 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 :root{
     /* Colors & Gradients*/
     --white: #ffffff;
     --royalBlue: #245785;
     --textBlue1: #2E99D5;
     --textBlue2: #389ED7;
+    --textBlue3: #2F9AD5;;
     --textBlack1: #555A61;
     --textBlack2: #333333;
     --textBlack3: #1f2025;
+    --textBlack4: #26262c;
     --gray: #C4C4C4;
     --smoke: #F1FCFF;
     --denseSmoke: #ACACAC;
     --imgGradient: to top right, #28b3e22f, #245885ba;
+    --contactGradient: to bottom, #dedbdba1,#b7b7b78b;
     --footerGradient: to bottom, #202126 100%,#555A62 100%;
 
     /* Font & Font families */
     --font1: Filson Pro;
-    --font2: Roboto;
+    --font2: 'Roboto'sans-serif;
     --font3: 'Mukta', sans-serif;
+    --font4: 'Maven Pro', sans-serif;
 }
 .container{
     width: 100vw;
@@ -30,4 +36,26 @@
     flex-direction: column;
     place-items: center;
     place-content: center;
+    overflow-x: hidden;
+}
+.bg-smoke{
+    background-color: var(--smoke);
+}
+.ff-3{
+    font-family: var(--font3);
+}
+.bg-sketch{
+    background: url('../img/bg__sketch.png') no-repeat;
+    background-size: cover;
+}
+.bg-contact{
+    background:linear-gradient(var(--contactGradient)), url('../img/bg__contact.png') no-repeat;
+    background-size: cover;
+}
+.block-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }

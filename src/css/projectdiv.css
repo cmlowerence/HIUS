@@ -1,30 +1,52 @@
 #project{
-    overflow-x: hidden;
+    background-color: var(--smoke);
 }
 .project__wrapper{
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: row;
 
 }
 .project__text{
-    width: 50%;
-    display: grid;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+    justify-items: start;
+    font-family: var(--font3);
+    line-height: 1;
+}
+.text__heading{
+    font-size: 4.5rem;
+    color: var(--textBlue3);
+    font-weight: 700;
+}
+.text__tagline{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--textBlack3);
 }
 .text__desc{
-    width: 50%;
+    font-size: 1.47rem;
+    color: var(--textBlack2);
 }
-
-
 /* Right Div */
+.project__img{
+    display: grid;
+    place-items: center;
+    width: 60%;
+}
 .imgWrapper{
     isolation: isolate;
     display: flex;
-    border: 1.5rem solid var(--textBlack3);
-    width: 65%;
+    border: 1.9rem solid var(--textBlack3);
+    width: 70%;
+    justify-content: center;
+    align-items: center;
 }
 .imgWrapper img{
-    width: 100%;
     z-index: 1;
-    transform: translateY(-1rem);
+    transform: translateY(-4.5rem) translateX(6.3rem);
 }
