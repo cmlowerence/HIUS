@@ -8,7 +8,7 @@
     <title>HIUS</title>
     <link rel="stylesheet" href="./src/css/root.css">
     <link rel="stylesheet" href="./src/css/header.css">
-    <link rel="stylesheet" href="./src/css/projectdiv.css">
+    <link rel="stylesheet" href="./src/css/projectDiv.css">
     <link rel="stylesheet" href="./src/css/arch.css">
     <link rel="stylesheet" href="./src/css/design.css">
     <link rel="stylesheet" href="./src/css/contact.css">
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <!-- <?php include('.\components/header.php') ?> -->
     <header>
         <section id="home">
             <div class="container homeDiv">
@@ -84,108 +85,112 @@
             </div>
         </section>
     </header>
-    <main>
-        <article class="container" id="project">
-            <div class="project__wrapper">
-                <div class="project__text">
-                    <span class="text__heading">Influencing The Future Of Place</span>
-                    <span class="text__tagline">Our goal is to improve housing sustainability and elevate the quality of
-                        life
+    <!--
+    <?php include('.\components/projectDiv.php') ?>-->
+    <article class="container" id="project">
+        <div class="project__wrapper">
+            <div class="project__text">
+                <span class="text__heading">Influencing The Future Of Place</span>
+                <span class="text__tagline">Our goal is to improve housing sustainability and elevate the quality of
+                    life
+                </span>
+                <span class="text__desc">Every project we embark on is a creative journey that results in an
+                    authentic mix of ideas and material. We draw inspiration from subtlety and nuances in your
+                    vision to create spaces rooted in individuality.</span>
+            </div>
+            <div class="project__img">
+                <span class="imgWrapper">
+                    <img src="./src/img/proj_img.png" id="proj_img">
+                </span>
+            </div>
+        </div>
+    </article>
+    <!-- <?php include('.\components/arch.php') ?> -->
+    <article id="architecture" class="bg-smoke container">
+        <div class="archWrapper">
+            <div class="arch__text ff-3">
+                DREAM > DESIGN > BUILD
+            </div>
+            <div class="arch__img">
+                <img src="./src/img/arch__design.png" alt="architecture">
+            </div>
+        </div>
+    </article>
+    <!-- <?php include('.\components/design.php') ?> -->
+    <article id="designs" class="bg-sketch block-flex">
+        <div class="designWrapper">
+            <div class="design__text">Hius Design Styles</div>
+            <div class="design__separator">
+                <span class="sep__line"></span>
+                <span class="spe__img">
+                    <img src="./src/img/favicon.png" alt="separator">
+                </span>
+                <span class="sep__line"></span>
+            </div>
+            <div class="design__cardBox">
+
+                <!-- <========== Card 1 ===========> -->
+                <div class="cardWrapper">
+                    <span class="card card1">
+                        <div class="card__heading">
+                            Modern
+                        </div>
+                        <div class="card__desc">
+                            From sleek structures to curvy facades, our designs follow a minimalistic approach that
+                            blends functionality into alluring contemporary designs.
+                        </div>
                     </span>
-                    <span class="text__desc">Every project we embark on is a creative journey that results in an
-                        authentic mix of ideas and material. We draw inspiration from subtlety and nuances in your
-                        vision to create spaces rooted in individuality.</span>
                 </div>
-                <div class="project__img">
-                    <span class="imgWrapper">
-                        <img src="./src/img/proj_img.png" id="proj_img">
+
+                <!-- <========== Card 2 ===========> -->
+                <div class="cardWrapper">
+                    <span class="card card2">
+                        <div class="card__heading">
+                            Sustainable
+                        </div>
+                        <div class="card__desc">
+                            Reflecting our commitment to sustainability, our designs create spaces that drive
+                            transformational change.
+                        </div>
+                    </span>
+                </div>
+
+                <!-- <========== Card 1 ===========> -->
+                <div class="cardWrapper">
+                    <span class="card card3">
+                        <div class="card__heading">
+                            Unorthodox
+                        </div>
+                        <div class="card__desc">
+                            Combining art with architecture, our designs are inspired by unconventional yet
+                            versatile
+                            material, structures and forms
+                        </div>
                     </span>
                 </div>
             </div>
-        </article>
-        <article id="architecture" class="bg-smoke container">
-            <div class="archWrapper">
-                <div class="arch__text ff-3">
-                    DREAM > DESIGN > BUILD
-                </div>
-                <div class="arch__img">
-                    <img src="./src/img/arch__design.png" alt="architecture">
-                </div>
+        </div>
+    </article>
+    <!-- <?php include('.\components/contact.php') ?> -->
+    <article id="contact" class="bg-contact container">
+        <div class="contactWrapper">
+            <div class="contact__card">
+                <span class="contact__card__heading">
+                    <p>Let's Chat!</p>
+                    <span class="sm-hr"></span>
+                </span>
+                <span class="contact__card__textMsg">
+                    Let's build you a home that's a joy to live in, shall we?
+                </span>
+                <button class="contact__card__btn btn">
+                    <p>Click here to pick our minds</p>
+                    <ion-icon name="arrow-forward-sharp"></ion-icon>
+
+                </button>
             </div>
-        </article>
-        <article id="designs" class="bg-sketch block-flex">
-            <div class="designWrapper">
-                <div class="design__text">Hius Design Styles</div>
-                <div class="design__separator">
-                    <span class="sep__line"></span>
-                    <span class="spe__img">
-                        <img src="./src/img/favicon.png" alt="separator">
-                    </span>
-                    <span class="sep__line"></span>
-                </div>
-                <div class="design__cardBox">
-
-                    <!-- <========== Card 1 ===========> -->
-                    <div class="cardWrapper">
-                        <span class="card card1">
-                            <div class="card__heading">
-                                Modern
-                            </div>
-                            <div class="card__desc">
-                                From sleek structures to curvy facades, our designs follow a minimalistic approach that
-                                blends functionality into alluring contemporary designs.
-                            </div>
-                        </span>
-                    </div>
-
-                    <!-- <========== Card 2 ===========> -->
-                    <div class="cardWrapper">
-                        <span class="card card2 active">
-                            <div class="card__heading">
-                                Sustainable
-                            </div>
-                            <div class="card__desc">
-                                Reflecting our commitment to sustainability, our designs create spaces that drive
-                                transformational change.
-                            </div>
-                        </span>
-                    </div>
-
-                    <!-- <========== Card 1 ===========> -->
-                    <div class="cardWrapper">
-                        <span class="card card3">
-                            <div class="card__heading">
-                                Unorthodox
-                            </div>
-                            <div class="card__desc">
-                                Combining art with architecture, our designs are inspired by unconventional yet
-                                versatile
-                                material, structures and forms
-                            </div>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article id="contact" class="bg-contact container">
-            <div class="contactWrapper">
-                <div class="contact__card">
-                    <span class="contact__card__heading">
-                        <p>Let's Chat!</p>
-                        <span class="sm-hr"></span>
-                    </span>
-                    <span class="contact__card__textMsg">
-                        Let's build you a home that's a joy to live in, shall we?
-                    </span>
-                    <button class="contact__card__btn btn">
-                        <p>Click here to pick our minds</p>
-                        <ion-icon name="arrow-forward-sharp"></ion-icon>
-
-                    </button>
-                </div>
-            </div>
-        </article>
-    </main>
+        </div>
+    </article>
+    <!-- <?php include('.\components/footer.php') ?>  -->
     <footer id="footer">
         <div class="footerWrapper">
             <div class="footer__separator">
@@ -220,6 +225,7 @@
             </div>
         </div>
     </footer>
+
     <script src="./src/js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -43,16 +43,49 @@
     border-radius: 10px;
     background: var(--white);
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
+/* Effect on click */
+/* .card.active {
+    width: 32.5rem;
+    height: 32.5rem;
+    position: absolute;
+    background-color: var(--textBlue1);
+} */
+/* Same Effect on hover */
+.card:hover{
+    width: 32.5rem;
+    height: 32.5rem;
+    position: absolute;
+    background-color: var(--textBlue1);
+}
+
+
 .card .card__heading{
     font-size: 3.5rem;
     color: var(--textBlue1);
     font-weight: 700;
 }
+/* .card.active .card__heading{
+    color: var(--white);
+    font-size: 3.8rem;
+} */
+.card:hover .card__heading{
+    color: var(--white);
+    font-size: 3.8rem;
+}
 .card .card__desc{
     line-height: 1.5;
     font-size: 1.6rem;
     color: var(--textBlack1);
+}
+/* .card.active .card__desc{
+    color: var(--white);
+    font-size: 1.8rem;
+} */
+.card:hover .card__desc{
+    color: var(--white);
+    font-size: 1.8rem;
 }
 .design__separator{
     display: flex;
